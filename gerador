@@ -1,0 +1,27 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    //variaveis
+    int idade, anoDeNascimento; 
+    string nome;
+  
+  
+    Console.WriteLine ("Digite seu nome ");
+    nome = Console.ReadLine();  
+    Console.WriteLine ("Digite o ano do seu nascimento");
+    anoDeNascimento = int.Parse(Console.ReadLine());
+    idade=DateTime.Now.Year-anoDeNascimento;
+
+    if(idade>=18)
+    {
+      Console.WriteLine("sua senha é:" +idade+nome);
+    } 
+
+    else
+    {
+      Console.WriteLine("sua senha é:" +nome+idade);
+    }
+
+  }
+}
